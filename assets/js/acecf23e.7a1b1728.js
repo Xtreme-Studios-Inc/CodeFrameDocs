@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcodeframe_docs=self.webpackChunkcodeframe_docs||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/CodeFrameDocs/blog","blogTitle":"Blog","authorsListPath":"/CodeFrameDocs/blog/authors"}')}}]);
