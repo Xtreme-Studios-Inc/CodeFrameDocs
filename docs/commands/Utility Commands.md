@@ -7,19 +7,19 @@ Handy general commands you can use in CodeFrame.
 ## Commands
 
 ```bash
-> help
+help
 ```
 
 Displays the help menu with all available commands and descriptions.
 
 ```bash
-> info
+info
 ```
 
 Displays the CodeFrame logo, along with the current execution ID—useful for debugging.
 
 ```bash
-> exit
+exit
 ```
 
 Exits CodeFrame (only available when running in interactive mode).
