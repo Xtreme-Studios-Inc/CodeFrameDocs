@@ -26,4 +26,4 @@ cf install glfw
 ```
 
 If omitted, all packages listed in .codeframe dependencies are installed.  
-See more on the dependency configuration [here](dependencies).
+See more on the dependency configuration [here](../config/dependencies.md).

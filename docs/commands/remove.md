@@ -26,4 +26,4 @@ cf remove glfw
 ```
 
 Package folder along what that specific dependency configuration would be removed form .codeframe file.  
-See more on the dependency configuration [here](dependencies).
+See more on the dependency configuration [here](../config/dependencies.md).
