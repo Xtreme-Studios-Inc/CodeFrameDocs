@@ -1,17 +1,11 @@
+---
+title: "string"
+---
+
 # `string` Module
 
 **Purpose:**  
 Essential string and vector utilities for manipulating, formatting, and processing text.
-
----
-
-## **Types**
-
-- **`StringReplaceMap`**  
-  `using StringReplaceMap = std::unordered_map<string, string>;`  
-  Map of string → string, for bulk placeholder replacement.
-
----
 
 ## **Functions Overview**
 
@@ -83,10 +77,19 @@ Replace **every** `from` in `str` with `to`.
 
 Replace all keys in `replaceMap` with their values throughout `input`.
 
+### **Types**
+
+**`StringReplaceMap`**  
+ `using StringReplaceMap = std::unordered_map<string, string>;`  
+ Map of string → string, for bulk placeholder replacement.
+
+---
+
 - **Returns:** Modified string
 - **Example:**
+
   ```cpp
-  replaceAllInMap("Hi, {name}!", {{"{name}", "Andre"}}); // "Hi, Andre!"
+  replaceAllInMap("Hi, {name}!", {{"{name}", "Sam"}}); // "Hi, Sam!"
   ```
 
 ---

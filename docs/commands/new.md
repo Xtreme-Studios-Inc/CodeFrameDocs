@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-Creates a new c++ project.
+Creates a new c++ project.  
 Choose from the available templates to generate a folder with your specified name and selected template.
 
 ## Command
@@ -11,29 +11,23 @@ Choose from the available templates to generate a folder with your specified nam
 cf new [name] [options]
 ```
 
-#### Aliases
+### Aliases
 
 `new`, `n`
 
-#### Arguments
+### Arguments
 
-###### Positional Arguments
+_Dry Run_  
+`--dry-run`  
+`-d`
 
-_ARG_
+_Verbose_  
+`--verbose`  
+`-v`
 
-###### Non Positional Arguments
-
-_Dry Run_
---dry-run
--d
-
-_Verbose_
---verbose ??
--v
-
-_Template_
-template=
-t=
+_Template_  
+`template=`  
+`t=`
 
 Values: `debug` `release`
 

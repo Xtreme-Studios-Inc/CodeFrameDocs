@@ -6,13 +6,9 @@ COMING SOON: Generate documentation from your code
 cf document
 ```
 
-#### Aliases
+### Aliases
 
 Aliases available for the **document** command
 `doc`, `docs`
 
-#### Arguments
-
-###### Positional Arguments
-
-###### Non Positional Arguments
+### Arguments

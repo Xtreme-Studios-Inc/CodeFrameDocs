@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 Copies the resources specified in the configuration.
@@ -11,21 +11,19 @@ From the specified "from" path to the "to" path. This allows all these resources
 cf bundle
 ```
 
-#### Aliases
+### Aliases
 
-`bun`
+`bundle`, `bun`
 
-#### Arguments
+### Arguments
 
-###### Non Positional Arguments
+_Dry Run_  
+`--dry-run`  
+`-d`
 
-_Dry Run_
---dry-run
--d
-
-_Verbose_
---verbose ??
--v
+_Verbose_  
+`--verbose`  
+`-v`
 
 ## Configuration
 
