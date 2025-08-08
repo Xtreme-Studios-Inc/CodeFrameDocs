@@ -4,6 +4,15 @@
  * work well for content-centric websites.
  */
 
+.navbar-github-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg")
+    no-repeat center;
+  background-size: contain;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #9777ea;
