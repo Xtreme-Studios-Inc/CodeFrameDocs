@@ -4,6 +4,14 @@
  * work well for content-centric websites.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
+
+/* Apply it site-wide */
+html,
+body {
+  font-family: "Cascadia Code", monospace;
+}
+
 .navbar-github-link {
   display: inline-block;
   width: 24px;
@@ -24,6 +32,8 @@
   --ifm-color-primary-lightest: #cbb7f8;
   --color-green: green;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Cascadia Code", monospace;
+  --ifm-heading-font-family: "Cascadia Code", monospace;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -36,5 +46,7 @@
   --ifm-color-primary-light: #a888ee;
   --ifm-color-primary-lighter: #b899f2;
   --ifm-color-primary-lightest: #cbb7f8;
+  --ifm-font-family-base: "Cascadia Code", monospace;
+  --ifm-heading-font-family: "Cascadia Code", monospace;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }

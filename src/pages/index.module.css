@@ -3,6 +3,8 @@
  * and scoped locally.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -20,4 +22,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroBanner .hero__title,
+.heroBanner .hero__subtitle {
+  font-family: "Cascadia Code", monospace;
 }

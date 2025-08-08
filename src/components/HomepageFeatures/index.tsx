@@ -9,6 +9,7 @@ type FeatureItem = {
   description: ReactNode;
 };
 
+// Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
 const FeatureList: FeatureItem[] = [
   {
     title: "Easy to Use",

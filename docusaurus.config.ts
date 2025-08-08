@@ -76,10 +76,11 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     colorMode: {
       defaultMode: "dark",
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
+      // title: "",
       title: "CodeFrame",
       logo: {
         alt: "CodeFrame Logo",
@@ -100,6 +101,37 @@ const config: Config = {
           position: "right",
           "aria-label": "GitHub repository",
         },
+        {
+          type: "html",
+          position: "right",
+          value: `
+            <a href="https://github.com/Xtreme-Studios-Inc/XCodeFrame"
+                target="_blank"
+                style=" display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        background-color: #353c49ff;
+                        padding: 7px 9px;
+                        border-radius: 0.4em;
+              ">
+                <img src="/img/github-mark-white.svg" alt="GitHub" width="27px" style={{ height: 65, width: "auto" }}/>
+                <span style="
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        color: white;
+                        font-weight: semibold;
+                        font-family: sans-serif;
+                        font-size: 12px;
+                        margin-left: 7px;
+                        white-space: nowrap;
+                        position: relative; 
+                        top: 1px;
+                ">Coming Soon</span>
+            </a>
+            `,
+        },
       ],
     },
     footer: {
@@ -118,34 +150,40 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "YouTube",
+              href: "https://www.youtube.com/@xconsciouscreator",
             },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
+            // {
+            //   label: "Stack Overflow",
+            //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            // },
+            // {
+            //   label: "Discord",
+            //   href: "https://discordapp.com/invite/docusaurus",
+            // },
+            // {
+            //   label: "X",
+            //   href: "https://x.com/docusaurus",
+            // },
           ],
         },
         {
           title: "More",
           items: [
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              // type: "html",
+              label: "GitHub (coming soon)",
+              // html: `<img src="/img/github-mark-white.svg" alt="GitHub" width="34.97px" style={{ height: 65, width: "auto" }}/>`,
+              href: "https://github.com/Xtreme-Studios-Inc/XCodeFrame",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} XtremeStudios, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
