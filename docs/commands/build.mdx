@@ -1,0 +1,56 @@
+---
+sidebar_position: 3
+---
+
+Builds a C++ project.  
+Compiling all source files and linking them into an executable.
+
+## Command
+
+```bash
+cf build
+```
+
+### Aliases
+
+`build`, `b`
+
+The workspace you run the command in has to contain a .codeframe config file
+
+### Arguments
+
+_Dry Run_  
+`--dry-run`  
+`-d`
+
+_Verbose_  
+`--verbose`  
+`-v`
+
+_Mode_  
+`mode=`  
+`m=`
+
+Values: `debug` `release`
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+
+<Tabs
+  values={[
+    { label: "Default", value: "default" },
+    { label: "Debug", value: "debug" },
+    { label: "Release", value: "release" },
+  ]}
+>
+  <TabItem value="default">
+    <CodeBlock language="bash">cf build</CodeBlock>
+  </TabItem>
+  <TabItem value="debug">
+    <CodeBlock language="bash">cf build m=debug</CodeBlock>
+  </TabItem>
+  <TabItem value="release">
+    <CodeBlock language="bash">cf build m=release</CodeBlock>
+  </TabItem>
+</Tabs>

@@ -50,3 +50,18 @@ body {
   --ifm-heading-font-family: "Cascadia Code", monospace;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }
+
+/* .markdown {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.markdown img,
+.markdown table {
+  max-width: 100%;
+} */
+
+article {
+  max-width: 700px;
+  margin: 0 auto;
+}

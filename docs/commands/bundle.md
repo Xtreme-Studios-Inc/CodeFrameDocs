@@ -2,8 +2,7 @@
 sidebar_position: 4
 ---
 
-Copies the resources specified in the configuration.
-From the specified "from" path to the "to" path. This allows all these resources to be bundled in to one folder.
+Copies the resources defined in the configuration from the specified "from" path to the "to" path, bundling them together into a single folder.
 
 ## Command
 

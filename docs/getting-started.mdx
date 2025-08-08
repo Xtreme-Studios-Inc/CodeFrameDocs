@@ -1,0 +1,117 @@
+---
+title: Getting Started
+sidebar_position: 2
+---
+
+Welcome to **CodeFrame**! This guide will walk you through downloading, installing, and creating your first C++ project.
+
+<br />
+
+### Step 1 - Download CodeFrame
+
+<div
+  style={{ display: "flex", alignItems: "center", gap: 9, margin: "16px 0" }}
+>
+  <img
+    src="/img/logo.svg"
+    alt="CodeFrame Logo"
+    width="80"
+    style={{ height: 65, width: "auto" }}
+  />
+  <a
+    href="https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/releases"
+    target="_blank"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      padding: "13px 20px",
+      lineHeight: 1,
+      whiteSpace: "nowrap",
+      backgroundColor: "var(--ifm-color-primary)",
+      color: "white",
+      borderRadius: 8,
+      textDecoration: "none",
+      fontWeight: "bold",
+      fontFamily: "sans-serif",
+      boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
+      alignSelf: "center",
+      flex: "0 0 auto",
+      height: "auto",
+      marginLeft: 12,
+    }}
+  >
+    {"Download"}
+  </a>
+</div>
+
+<br />
+
+### Step 2 — Install CodeFrame
+
+Follow the installation instructions on our custom installer to install codeframe.
+
+:::note
+
+At this time, the CodeFrame installer is **not digitally signed**. While we can assure you that it is safe, contains no viruses, and comes directly from the official CodeFrame source, Windows may display a warning when you run it.  
+It is entirely up to you to decide whether to proceed and allow the installation.
+
+:::
+
+<br />
+
+### Step 3 — Create Your First Project
+
+Once installed, open a terminal in your desired workspace folder and run:
+
+```bash
+cf new
+```
+
+<br />
+
+### Step 4 — Choose a Template
+
+CodeFrame comes with multiple project templates. When prompted, pick the one that best fits your needs:
+
+- Default — Minimal setup to get started quickly.
+- CLI — Command-Line interface project template.
+- (Coming Soon) Game — Includes rendering and basic graphics setup.
+- (Coming Soon) GUI - Event-driven graphical application with a native window.
+
+<br />
+### Step 5 — Open Your Project With [VSCode](https://code.visualstudio.com/){" "}
+
+For its excellent integration with CodeFrame we recommend downloading **VSCode**.
+
+To open your new project in VS Code:
+
+```bash
+code ./[PROJECT_NAME]
+```
+
+<br />
+### Step 6 — Build & Run
+
+From your project folder:
+
+```bash
+cf build
+```
+
+Then run your project
+
+```bash
+./build/default/[PROJECT_NAME].exe
+```
+
+<br />
+
+---
+
+<br />
+
+:::warning
+
+**CodeFrame** is not yet production-ready. Use with caution—APIs and commands may change as development continues and the tool evolves.
+
+:::
