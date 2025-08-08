@@ -115,7 +115,7 @@ const config: Config = {
                         padding: 7px 9px;
                         border-radius: 0.4em;
               ">
-                <img src="/img/github-mark-white.svg" alt="GitHub" width="27px" style={{ height: 65, width: "auto" }}/>
+                <img src="/img/github-mark-white.svg" alt="GitHub" width="27px"/>
                 <span style="
                         display: flex;
                         align-items: center;
@@ -175,9 +175,7 @@ const config: Config = {
             //   to: "/blog",
             // },
             {
-              // type: "html",
               label: "GitHub (coming soon)",
-              // html: `<img src="/img/github-mark-white.svg" alt="GitHub" width="34.97px" style={{ height: 65, width: "auto" }}/>`,
               href: "https://github.com/Xtreme-Studios-Inc/XCodeFrame",
             },
           ],
