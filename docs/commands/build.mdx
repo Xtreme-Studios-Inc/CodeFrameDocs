@@ -31,7 +31,7 @@ _Mode_
 `mode=`  
 `m=`
 
-Values: `debug` `release`
+Values: `debug` `release` `profile`
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
@@ -39,16 +39,16 @@ import CodeBlock from "@theme/CodeBlock";
 
 <Tabs
   values={[
-    { label: "Default", value: "default" },
     { label: "Debug", value: "debug" },
+    { label: "Profile", value: "profile" },
     { label: "Release", value: "release" },
   ]}
 >
-  <TabItem value="default">
+  <TabItem value="debug">
     <CodeBlock language="bash">cf build</CodeBlock>
   </TabItem>
-  <TabItem value="debug">
-    <CodeBlock language="bash">cf build m=debug</CodeBlock>
+  <TabItem value="profile">
+    <CodeBlock language="bash">cf build m=profile</CodeBlock>
   </TabItem>
   <TabItem value="release">
     <CodeBlock language="bash">cf build m=release</CodeBlock>

@@ -9,7 +9,7 @@ This file includes the following configurations:
 Specify a name for your project
 
 `appEntry`:  
-Relative path to the main.cpp file
+Relative path to the `main` project file
 
 `buildDir`:  
 Relative path to where the .exe file should be generated

@@ -1,6 +1,7 @@
 {
   "label": "Language References",
-  "position": 5,
+  "position": 6,
+  "className": "hidden",
   "link": {
     "type": "doc",
     "id": "language-references/language-references"

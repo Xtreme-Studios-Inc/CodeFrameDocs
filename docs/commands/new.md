@@ -8,7 +8,7 @@ Choose from the available templates to generate a folder with your specified nam
 ## Command
 
 ```bash
-cf new [name] [options]
+cf new
 ```
 
 ### Aliases
@@ -29,7 +29,7 @@ _Template_
 `template=`  
 `t=`
 
-Values: `debug` `release`
+Values: `default` `cli` `game`
 
 ### Positional Arguments
 

@@ -61,7 +61,74 @@ body {
   max-width: 100%;
 } */
 
-article {
+/* article {
   max-width: 700px;
   margin: 0 auto;
+} */
+
+.theme-doc-sidebar-item-category.hidden {
+  display: none !important;
+}
+
+.theme-doc-markdown {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Category labels */
+.theme-doc-sidebar-item-category .menu__list-item-collapsible {
+  font-size: 1rem !important; /* bump up */
+  font-weight: 600; /* optional: make bolder */
+  background-color: #232325;
+}
+
+.theme-doc-sidebar-item-category .menu__list-item-collapsible:hover {
+  background-color: #323234;
+}
+
+/* Links under categories */
+.theme-doc-sidebar-item-link .menu__link {
+  font-size: 1rem !important;
+}
+
+/* Level 1 (top) category labels */
+.theme-doc-sidebar-menu
+  .menu__list
+  > .theme-doc-sidebar-item-category
+  .menu__list-item-collapsible
+  > .menu__link {
+  font-size: 0.95rem !important;
+  font-weight: 600;
+}
+
+/* Level 2 category labels */
+.theme-doc-sidebar-menu
+  .menu__list
+  .menu__list
+  > .theme-doc-sidebar-item-category
+  .menu__list-item-collapsible
+  > .menu__link {
+  font-size: 0.85rem !important;
+}
+
+/* Level 3+ category labels */
+.theme-doc-sidebar-menu
+  .menu__list
+  .menu__list
+  .menu__list
+  > .theme-doc-sidebar-item-category
+  .menu__list-item-collapsible
+  > .menu__link {
+  font-size: 0.8rem !important;
+}
+
+/* Doc links at different depths */
+.theme-doc-sidebar-menu .menu__list .menu__link {
+  font-size: 0.9rem !important;
+} /* base */
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__link {
+  font-size: 0.85rem !important;
+}
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__link {
+  font-size: 0.8rem !important;
 }
