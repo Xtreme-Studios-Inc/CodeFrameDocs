@@ -12,29 +12,26 @@ type FeatureItem = {
 // Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>Do as little as possible to get as much done as possible.</>,
-  },
-  {
-    title: "Performance",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "Fast",
+    Svg: require("@site/static/img/speed.svg").default,
     description: (
-      <>
-        Built in C++ for speed &mdash; CodeFrame even bootstraps itself using
-        CodeFrame.
-      </>
+      <>Built in C++ for speed &mdash; CodeFrame even bootstraps itself.</>
     ),
   },
   {
-    title: "Flexibility",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "Flexible",
+    Svg: require("@site/static/img/flexibility.svg").default,
     description: (
       <>
         Designed to adapt and extend for any need, while sticking to simple,
         effective standards.
       </>
     ),
+  },
+  {
+    title: "Easy to Use",
+    Svg: require("@site/static/img/easy_to_use.svg").default,
+    description: <>Minimal effort. Maximum output.</>,
   },
 ];
 

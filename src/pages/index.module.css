@@ -10,11 +10,14 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #121212;
+  color: #f5f5f5;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    background-color: var(--ifm-color-primary-darkest);
   }
 }
 
@@ -27,4 +30,40 @@
 .heroBanner .hero__title,
 .heroBanner .hero__subtitle {
   font-family: "Cascadia Code", monospace;
+}
+
+.heroBanner :global(.hero__subtitle) {
+  font-size: 1.1rem; /* pick something obvious to verify */
+  font-weight: 400;
+  line-height: 1.6;
+
+  max-width: 900px;
+  margin: 0 auto; /* centers the block */
+  text-align: center; /* centers text inside it */
+  margin-bottom: 1.3rem;
+}
+
+/* Bigger, tighter, nicer rhythm */
+.heroBanner :global(.hero__title) {
+  margin-bottom: 0.9rem;
+}
+
+/* Gradient headline */
+.brandTitle {
+  font-family: "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+  font-weight: 800; /* Cascadia variable supports 200..700+, use the heaviest available */
+  font-size: clamp(2.6rem, 6vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  /* gradient ink */
+  /* background: linear-gradient(92deg, #ffffff 0%, #9777ea 70%); */
+  /* background-color: #9777ea;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* tiny depth on dark bg */
+  /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); */
 }

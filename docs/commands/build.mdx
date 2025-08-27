@@ -17,19 +17,14 @@ cf build
 
 The workspace you run the command in has to contain a .codeframe config file
 
-### Arguments
+## Arguments
 
-_Dry Run_  
-`--dry-run`  
-`-d`
+### Mode
 
-_Verbose_  
-`--verbose`  
-`-v`
-
-_Mode_  
 `mode=`  
 `m=`
+
+The mode argument flag can be negated as long as you use one of these values
 
 Values: `debug` `release` `profile`
 
@@ -48,9 +43,35 @@ import CodeBlock from "@theme/CodeBlock";
     <CodeBlock language="bash">cf build</CodeBlock>
   </TabItem>
   <TabItem value="profile">
-    <CodeBlock language="bash">cf build m=profile</CodeBlock>
+    <CodeBlock language="bash">cf build profile</CodeBlock>
   </TabItem>
   <TabItem value="release">
-    <CodeBlock language="bash">cf build m=release</CodeBlock>
+    <CodeBlock language="bash">cf build release</CodeBlock>
+  </TabItem>
+</Tabs>
+
+### Library
+
+Build a library only by setting the library argument
+
+`library=`  
+`lib=`  
+`l=`
+
+<Tabs
+  values={[
+    { label: "Debug", value: "debug" },
+    { label: "Profile", value: "profile" },
+    { label: "Release", value: "release" },
+  ]}
+>
+  <TabItem value="debug">
+    <CodeBlock language="bash">cf build lib=**\<library_name\>**</CodeBlock>
+  </TabItem>
+  <TabItem value="profile">
+    <CodeBlock language="bash">cf build profile lib=**\<library_name\>**</CodeBlock>
+  </TabItem>
+  <TabItem value="release">
+    <CodeBlock language="bash">cf build release lib=**\<library_name\>**</CodeBlock>
   </TabItem>
 </Tabs>

@@ -14,12 +14,29 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          {/* {siteConfig.title} */}
+          <span className={styles.brandTitle}>CodeFrame</span>
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--lg"
+            style={{
+              backgroundColor: "var(--color-green)",
+              color: "white",
+              marginRight: "1rem",
+            }}
+            to="https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/releases/download/codeframe.003/codeframe-installer.exe"
+          >
+            Download
+          </Link>
+          <Link
+            className="button button--lg"
+            style={{
+              backgroundColor: "#9777ea",
+              color: "white",
+              marginRight: "1rem",
+            }}
             to="/docs/introduction"
           >
             Get Started
