@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-language-references/cpp/cpp" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">C++ | CodeFrame</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://codeframe.run/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://codeframe.run/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://codeframe.run/docs/language-references/cpp/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="C++ | CodeFrame"><meta data-rh="true" name="description" content="📚 C++ Standard Library Headers"><meta data-rh="true" property="og:description" content="📚 C++ Standard Library Headers"><link data-rh="true" rel="icon" href="/img/CF_Logo.ico"><link data-rh="true" rel="canonical" href="https://codeframe.run/docs/language-references/cpp/"><link data-rh="true" rel="alternate" href="https://codeframe.run/docs/language-references/cpp/" hreflang="en"><link data-rh="true" rel="alternate" href="https://codeframe.run/docs/language-references/cpp/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Language References","item":"https://codeframe.run/docs/language-references/"},{"@type":"ListItem","position":2,"name":"C++","item":"https://codeframe.run/docs/language-references/cpp/"}]}</script><link rel="stylesheet" href="/assets/css/styles.0796da3f.css">
+<script src="/assets/js/runtime~main.fa3fd158.js" defer="defer"></script>
+<script src="/assets/js/main.8f858e51.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="CodeFrame Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="CodeFrame Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CodeFrame</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/introduction">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Xtreme-Studios-Inc/XCodeFrame" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-github-link" aria-label="GitHub repository"></a><div class="navbar__item">
+            <a href="https://github.com/Xtreme-Studios-Inc/XCodeFrame" target="_blank" style="display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        background-color: #353c49ff;
+                        padding: 7px 9px;
+                        border-radius: 0.4em;">
+                <img src="/img/github-mark-white.svg" alt="GitHub" width="27px">
+                <span style="display: flex;
+                        align-items: center;
+                        height: 100%;
+                        color: white;
+                        font-weight: semibold;
+                        font-family: sans-serif;
+                        font-size: 12px;
+                        margin-left: 7px;
+                        white-space: nowrap;
+                        position: relative; 
+                        top: 1px;">Coming Soon</span>
+            </a>
+            </div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/introduction">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/guides">Guides</a><button aria-label="Expand sidebar category &#x27;Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/commands">Commands</a><button aria-label="Expand sidebar category &#x27;Commands&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/config/">Config</a><button aria-label="Expand sidebar category &#x27;Config&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed hidden"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/api-reference/">API Reference</a><button aria-label="Expand sidebar category &#x27;API Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item hidden"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/language-references/">Language References</a><button aria-label="Collapse sidebar category &#x27;Language References&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible menu__list-item-collapsible--active"><a class="menu__link menu__link--sublist menu__link--active" aria-current="page" tabindex="0" href="/docs/language-references/cpp/">C++</a><button aria-label="Collapse sidebar category &#x27;C++&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/numbers--math">Numbers &amp; Math</a><button aria-label="Expand sidebar category &#x27;Numbers &amp; Math&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/strings--text">Strings &amp; Text</a><button aria-label="Expand sidebar category &#x27;Strings &amp; Text&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/containers">Containers</a><button aria-label="Expand sidebar category &#x27;Containers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/input--output">Input / Output</a><button aria-label="Expand sidebar category &#x27;Input / Output&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/utilities">Utilities</a><button aria-label="Expand sidebar category &#x27;Utilities&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/memory-management">Memory Management</a><button aria-label="Expand sidebar category &#x27;Memory Management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/error-handling--debugging">Error Handling &amp; Debugging</a><button aria-label="Expand sidebar category &#x27;Error Handling &amp; Debugging&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/iterators--ranges">Iterators &amp; Ranges</a><button aria-label="Expand sidebar category &#x27;Iterators &amp; Ranges&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/algorithms--execution">Algorithms &amp; Execution</a><button aria-label="Expand sidebar category &#x27;Algorithms &amp; Execution&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/localization">Localization</a><button aria-label="Expand sidebar category &#x27;Localization&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/filesystem">Filesystem</a><button aria-label="Expand sidebar category &#x27;Filesystem&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/regular-expressions">Regular Expressions</a><button aria-label="Expand sidebar category &#x27;Regular Expressions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/atomics--concurrency">Atomics &amp; Concurrency</a><button aria-label="Expand sidebar category &#x27;Atomics &amp; Concurrency&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/threading--parallelism">Threading &amp; Parallelism</a><button aria-label="Expand sidebar category &#x27;Threading &amp; Parallelism&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/category/core-concepts--language-features">Core Concepts &amp; Language Features</a><button aria-label="Expand sidebar category &#x27;Core Concepts &amp; Language Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/language-references/c/">C</a><button aria-label="Expand sidebar category &#x27;C&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/docs/language-references/asm/">Assembly</a><button aria-label="Expand sidebar category &#x27;Assembly&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/language-references/"><span>Language References</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">C++</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>C++</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="-c-standard-library-headers">📚 C++ Standard Library Headers<a href="#-c-standard-library-headers" class="hash-link" aria-label="Direct link to 📚 C++ Standard Library Headers" title="Direct link to 📚 C++ Standard Library Headers">​</a></h2>
+<p>These are the standard headers defined by ISO C++.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-numbers--math">🔢 Numbers &amp; Math<a href="#-numbers--math" class="hash-link" aria-label="Direct link to 🔢 Numbers &amp; Math" title="Direct link to 🔢 Numbers &amp; Math">​</a></h3>
+<ul>
+<li><code>&lt;limits&gt;</code> — Type properties</li>
+<li><code>&lt;climits&gt;</code> — Limits of integer types</li>
+<li><code>&lt;cfloat&gt;</code> — Limits of floating-point types</li>
+<li><code>&lt;cstdint&gt;</code> — Fixed-width integer types (C++11)</li>
+<li><code>&lt;cinttypes&gt;</code> — Integer format macros (C++11)</li>
+<li><code>&lt;stdfloat&gt;</code> — Extended floating types (C++23)</li>
+<li><code>&lt;bit&gt;</code> — Bit manipulation (C++20)</li>
+<li><code>&lt;cmath&gt;</code> — Math functions</li>
+<li><code>&lt;numbers&gt;</code> — Math constants (C++20)</li>
+<li><code>&lt;numeric&gt;</code> — Numeric algorithms</li>
+<li><code>&lt;ratio&gt;</code> — Compile-time rational arithmetic (C++11)</li>
+<li><code>&lt;complex&gt;</code> — Complex numbers</li>
+<li><code>&lt;valarray&gt;</code> — Value arrays</li>
+<li><code>&lt;cfenv&gt;</code> — Floating-point environment (C++11)</li>
+<li><code>&lt;random&gt;</code> — Random numbers (C++11)</li>
+<li><code>&lt;linalg&gt;</code> — Linear algebra (C++26)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-strings--text">✍️ Strings &amp; Text<a href="#️-strings--text" class="hash-link" aria-label="Direct link to ✍️ Strings &amp; Text" title="Direct link to ✍️ Strings &amp; Text">​</a></h3>
+<ul>
+<li><code>&lt;string&gt;</code> — <code>std::string</code></li>
+<li><code>&lt;string_view&gt;</code> — <code>std::string_view</code> (C++17)</li>
+<li><code>&lt;charconv&gt;</code> — <code>to_chars</code>, <code>from_chars</code> (C++17)</li>
+<li><code>&lt;format&gt;</code> — <code>std::format</code> (C++20)</li>
+<li><code>&lt;cctype&gt;</code> — Character classification</li>
+<li><code>&lt;cstring&gt;</code> — C-style strings</li>
+<li><code>&lt;cwchar&gt;</code> — Wide strings</li>
+<li><code>&lt;cwctype&gt;</code> — Wide char classification</li>
+<li><code>&lt;cuchar&gt;</code> — UTF conversion (C++11)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-containers">📦 Containers<a href="#-containers" class="hash-link" aria-label="Direct link to 📦 Containers" title="Direct link to 📦 Containers">​</a></h3>
+<ul>
+<li><code>&lt;array&gt;</code> — <code>std::array</code> (C++11)</li>
+<li><code>&lt;vector&gt;</code> — <code>std::vector</code></li>
+<li><code>&lt;deque&gt;</code> — <code>std::deque</code></li>
+<li><code>&lt;list&gt;</code> — <code>std::list</code></li>
+<li><code>&lt;forward_list&gt;</code> — <code>std::forward_list</code> (C++11)</li>
+<li><code>&lt;map&gt;</code> — <code>std::map</code>, <code>std::multimap</code></li>
+<li><code>&lt;set&gt;</code> — <code>std::set</code>, <code>std::multiset</code></li>
+<li><code>&lt;unordered_map&gt;</code> — Hash maps (C++11)</li>
+<li><code>&lt;unordered_set&gt;</code> — Hash sets (C++11)</li>
+<li><code>&lt;stack&gt;</code> — <code>std::stack</code></li>
+<li><code>&lt;queue&gt;</code> — <code>std::queue</code>, <code>std::priority_queue</code></li>
+<li><code>&lt;span&gt;</code> — <code>std::span</code> view (C++20)</li>
+<li><code>&lt;mdspan&gt;</code> — <code>std::mdspan</code> (C++23)</li>
+<li><code>&lt;flat_map&gt;</code> — <code>std::flat_map</code> (C++23)</li>
+<li><code>&lt;flat_set&gt;</code> — <code>std::flat_set</code> (C++23)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-input--output">📂 Input / Output<a href="#-input--output" class="hash-link" aria-label="Direct link to 📂 Input / Output" title="Direct link to 📂 Input / Output">​</a></h3>
+<ul>
+<li><code>&lt;iostream&gt;</code> — Standard streams</li>
+<li><code>&lt;istream&gt;</code> — Input streams</li>
+<li><code>&lt;ostream&gt;</code> — Output streams</li>
+<li><code>&lt;ios&gt;</code> — Stream base classes</li>
+<li><code>&lt;iosfwd&gt;</code> — Forward declarations</li>
+<li><code>&lt;iomanip&gt;</code> — I/O manipulators</li>
+<li><code>&lt;fstream&gt;</code> — File streams</li>
+<li><code>&lt;sstream&gt;</code> — String streams</li>
+<li><code>&lt;spanstream&gt;</code> — Span streams (C++23)</li>
+<li><code>&lt;strstream&gt;</code> — Deprecated old string streams</li>
+<li><code>&lt;cstdio&gt;</code> — C I/O</li>
+<li><code>&lt;print&gt;</code> — <code>std::print</code> (C++23)</li>
+<li><code>&lt;streambuf&gt;</code> — Stream buffers</li>
+<li><code>&lt;syncstream&gt;</code> — Synchronized output streams (C++20)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-utilities">🔧 Utilities<a href="#-utilities" class="hash-link" aria-label="Direct link to 🔧 Utilities" title="Direct link to 🔧 Utilities">​</a></h3>
+<ul>
+<li><code>&lt;any&gt;</code> — <code>std::any</code> (C++17)</li>
+<li><code>&lt;optional&gt;</code> — <code>std::optional</code> (C++17)</li>
+<li><code>&lt;variant&gt;</code> — <code>std::variant</code> (C++17)</li>
+<li><code>&lt;expected&gt;</code> — <code>std::expected</code> (C++23)</li>
+<li><code>&lt;tuple&gt;</code> — <code>std::tuple</code> (C++11)</li>
+<li><code>&lt;functional&gt;</code> — Function objects, bind, invoke</li>
+<li><code>&lt;bitset&gt;</code> — Fixed-size bitset</li>
+<li><code>&lt;source_location&gt;</code> — Code location info (C++20)</li>
+<li><code>&lt;debugging&gt;</code> — Debugging utilities (C++26)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-memory-management">🧵 Memory Management<a href="#-memory-management" class="hash-link" aria-label="Direct link to 🧵 Memory Management" title="Direct link to 🧵 Memory Management">​</a></h3>
+<ul>
+<li><code>&lt;new&gt;</code> — Low-level memory utilities</li>
+<li><code>&lt;memory&gt;</code> — Smart pointers, allocators</li>
+<li><code>&lt;memory_resource&gt;</code> — Polymorphic allocators (C++17)</li>
+<li><code>&lt;scoped_allocator&gt;</code> — Nested allocators (C++11)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-error-handling--debugging">⚡ Error Handling &amp; Debugging<a href="#-error-handling--debugging" class="hash-link" aria-label="Direct link to ⚡ Error Handling &amp; Debugging" title="Direct link to ⚡ Error Handling &amp; Debugging">​</a></h3>
+<ul>
+<li><code>&lt;cassert&gt;</code> — Assertions</li>
+<li><code>&lt;cerrno&gt;</code> — Error codes</li>
+<li><code>&lt;exception&gt;</code> — Exception handling</li>
+<li><code>&lt;stdexcept&gt;</code> — Standard exceptions</li>
+<li><code>&lt;system_error&gt;</code> — Error codes &amp; conditions (C++11)</li>
+<li><code>&lt;stacktrace&gt;</code> — Stacktrace (C++23)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-iterators--ranges">🔄 Iterators &amp; Ranges<a href="#-iterators--ranges" class="hash-link" aria-label="Direct link to 🔄 Iterators &amp; Ranges" title="Direct link to 🔄 Iterators &amp; Ranges">​</a></h3>
+<ul>
+<li><code>&lt;iterator&gt;</code> — Iterators</li>
+<li><code>&lt;ranges&gt;</code> — Ranges library (C++20)</li>
+<li><code>&lt;generator&gt;</code> — <code>std::generator</code> (C++23)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-algorithms--execution">⚙️ Algorithms &amp; Execution<a href="#️-algorithms--execution" class="hash-link" aria-label="Direct link to ⚙️ Algorithms &amp; Execution" title="Direct link to ⚙️ Algorithms &amp; Execution">​</a></h3>
+<ul>
+<li><code>&lt;algorithm&gt;</code> — Sorting, searching, etc.</li>
+<li><code>&lt;execution&gt;</code> — Parallel execution policies (C++17)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-localization">🌍 Localization<a href="#-localization" class="hash-link" aria-label="Direct link to 🌍 Localization" title="Direct link to 🌍 Localization">​</a></h3>
+<ul>
+<li><code>&lt;locale&gt;</code> — Localization utilities</li>
+<li><code>&lt;clocale&gt;</code> — C-style locale</li>
+<li><code>&lt;codecvt&gt;</code> — Unicode conversion (C++11, deprecated C++17, removed C++26)</li>
+<li><code>&lt;text_encoding&gt;</code> — Text encodings (C++26)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-filesystem">📁 Filesystem<a href="#-filesystem" class="hash-link" aria-label="Direct link to 📁 Filesystem" title="Direct link to 📁 Filesystem">​</a></h3>
+<ul>
+<li><code>&lt;filesystem&gt;</code> — Paths and filesystem operations (C++17)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-regular-expressions">🔍 Regular Expressions<a href="#-regular-expressions" class="hash-link" aria-label="Direct link to 🔍 Regular Expressions" title="Direct link to 🔍 Regular Expressions">​</a></h3>
+<ul>
+<li><code>&lt;regex&gt;</code> — Regex library (C++11)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-atomics--concurrency">🔒 Atomics &amp; Concurrency<a href="#-atomics--concurrency" class="hash-link" aria-label="Direct link to 🔒 Atomics &amp; Concurrency" title="Direct link to 🔒 Atomics &amp; Concurrency">​</a></h3>
+<ul>
+<li><code>&lt;atomic&gt;</code> — Atomic operations (C++11)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-threading--parallelism">🧵 Threading &amp; Parallelism<a href="#-threading--parallelism" class="hash-link" aria-label="Direct link to 🧵 Threading &amp; Parallelism" title="Direct link to 🧵 Threading &amp; Parallelism">​</a></h3>
+<ul>
+<li><code>&lt;thread&gt;</code> — <code>std::thread</code> (C++11)</li>
+<li><code>&lt;mutex&gt;</code> — Mutexes (C++11)</li>
+<li><code>&lt;shared_mutex&gt;</code> — Shared mutex (C++14)</li>
+<li><code>&lt;condition_variable&gt;</code> — Thread waiting (C++11)</li>
+<li><code>&lt;future&gt;</code> — Async computations (C++11)</li>
+<li><code>&lt;stop_token&gt;</code> — Stop tokens (C++20)</li>
+<li><code>&lt;barrier&gt;</code> — Barriers (C++20)</li>
+<li><code>&lt;latch&gt;</code> — Latches (C++20)</li>
+<li><code>&lt;semaphore&gt;</code> — Semaphores (C++20)</li>
+<li><code>&lt;hazard_pointer&gt;</code> — Hazard pointers (C++26)</li>
+<li><code>&lt;rcu&gt;</code> — Read-copy-update (C++26)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-core-concepts--language-features">🧩 Core Concepts &amp; Language Features<a href="#-core-concepts--language-features" class="hash-link" aria-label="Direct link to 🧩 Core Concepts &amp; Language Features" title="Direct link to 🧩 Core Concepts &amp; Language Features">​</a></h3>
+<ul>
+<li><code>&lt;concepts&gt;</code> — Fundamental concepts (C++20)</li>
+<li><code>&lt;coroutine&gt;</code> — Coroutine support (C++20)</li>
+<li><code>&lt;compare&gt;</code> — Three-way comparison (<code>&lt;=&gt;</code>, C++20)</li>
+<li><code>&lt;type_traits&gt;</code> — Compile-time type information</li>
+<li><code>&lt;typeinfo&gt;</code> — Runtime type information</li>
+<li><code>&lt;typeindex&gt;</code> — <code>std::type_index</code> (C++11)</li>
+<li><code>&lt;utility&gt;</code> — Utility components (<code>move</code>, <code>swap</code>, etc.)</li>
+<li><code>&lt;initializer_list&gt;</code> — <code>std::initializer_list</code> (C++11)</li>
+<li><code>&lt;version&gt;</code> — Implementation-dependent library info (C++20)</li>
+</ul>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/language-references/cpp/cpp.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/language-references/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">language-references</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/numbers--math"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Numbers &amp; Math</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-c-standard-library-headers" class="table-of-contents__link toc-highlight">📚 C++ Standard Library Headers</a><ul><li><a href="#-numbers--math" class="table-of-contents__link toc-highlight">🔢 Numbers &amp; Math</a></li><li><a href="#️-strings--text" class="table-of-contents__link toc-highlight">✍️ Strings &amp; Text</a></li><li><a href="#-containers" class="table-of-contents__link toc-highlight">📦 Containers</a></li><li><a href="#-input--output" class="table-of-contents__link toc-highlight">📂 Input / Output</a></li><li><a href="#-utilities" class="table-of-contents__link toc-highlight">🔧 Utilities</a></li><li><a href="#-memory-management" class="table-of-contents__link toc-highlight">🧵 Memory Management</a></li><li><a href="#-error-handling--debugging" class="table-of-contents__link toc-highlight">⚡ Error Handling &amp; Debugging</a></li><li><a href="#-iterators--ranges" class="table-of-contents__link toc-highlight">🔄 Iterators &amp; Ranges</a></li><li><a href="#️-algorithms--execution" class="table-of-contents__link toc-highlight">⚙️ Algorithms &amp; Execution</a></li><li><a href="#-localization" class="table-of-contents__link toc-highlight">🌍 Localization</a></li><li><a href="#-filesystem" class="table-of-contents__link toc-highlight">📁 Filesystem</a></li><li><a href="#-regular-expressions" class="table-of-contents__link toc-highlight">🔍 Regular Expressions</a></li><li><a href="#-atomics--concurrency" class="table-of-contents__link toc-highlight">🔒 Atomics &amp; Concurrency</a></li><li><a href="#-threading--parallelism" class="table-of-contents__link toc-highlight">🧵 Threading &amp; Parallelism</a></li><li><a href="#-core-concepts--language-features" class="table-of-contents__link toc-highlight">🧩 Core Concepts &amp; Language Features</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/introduction">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.youtube.com/@xconsciouscreator" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Xtreme-Studios-Inc/XCodeFrame" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub (coming soon)<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 XtremeStudios, Inc.</div></div></div></footer></div>
+</body>
+</html>
