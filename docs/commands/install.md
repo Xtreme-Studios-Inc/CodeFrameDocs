@@ -15,9 +15,10 @@ cf install [package]
 
 `install`, `i`
 
-### Arguments
+## Arguments
 
-**_package_** (optional)  
+### **_package_** (optional)
+
 Name of the package to install.
 
 ```

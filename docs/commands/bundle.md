@@ -14,15 +14,9 @@ cf bundle
 
 `bundle`, `bun`
 
-### Arguments
+## Arguments
 
-_Dry Run_  
-`--dry-run`  
-`-d`
-
-_Verbose_  
-`--verbose`  
-`-v`
+None.
 
 ## Configuration
 

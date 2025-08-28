@@ -2,8 +2,8 @@
 sidebar_position: 2
 ---
 
-Creates a new c++ project.  
-Choose from the available templates to generate a folder with your specified name and selected template.
+Creates a new project using one of the available templates.  
+Generates a folder with the given name and selected template.
 
 ## Command
 
@@ -15,25 +15,18 @@ cf new
 
 `new`, `n`
 
-### Arguments
+## Arguments
 
-_Dry Run_  
-`--dry-run`  
-`-d`
+### Language
 
-_Verbose_  
-`--verbose`  
-`-v`
+`language=` / `lang=` / `l=`
 
-_Template_  
-`template=`  
-`t=`
+Values:  
+`cpp` `c` `asm`
 
-Values: `default` `cli` `game`
+### Template
 
-### Positional Arguments
+`template=` / `t=`
 
-##### Path
-
-'./Projects/test'
-must contain at least a name for the project
+Values:  
+`default` `cli` `game`

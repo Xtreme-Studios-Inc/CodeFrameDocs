@@ -14,9 +14,10 @@ cf remove <package>
 
 `remove`, `rm`, `rem`, `rmv`
 
-### Arguments
+## Arguments
 
-**_package_** (required)  
+### **_package_** (required)
+
 Name of the package to remove.  
 _You must specify exactly one package._
 
