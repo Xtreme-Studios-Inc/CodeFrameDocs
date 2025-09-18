@@ -10,6 +10,11 @@ const config: Config = {
     "Built for C++ developers, CodeFrame delivers serious performance and precision at every stage of your workflow. No bloat, just pure C++ power.",
   favicon: "img/CF_Logo.ico",
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -186,6 +191,9 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    mermaid: {
+      theme: { light: "neutral", dark: "forest" },
     },
   } satisfies Preset.ThemeConfig,
 };

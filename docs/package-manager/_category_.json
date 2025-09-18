@@ -1,0 +1,8 @@
+{
+  "label": "Package Manager",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "CodeFrames build in package manager standardizing a new way of creating packages for projects!"
+  }
+}

@@ -35,6 +35,10 @@ body {
   --ifm-font-family-base: "Cascadia Code", monospace;
   --ifm-heading-font-family: "Cascadia Code", monospace;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-button-padding-vertical: 0.2em;
+  --ifm-button-padding-horizontal: 0.7em;
+  --ifm-button-size-multiplier: 1;
+  --ifm-button-font-weight: 500;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -49,6 +53,7 @@ body {
   --ifm-font-family-base: "Cascadia Code", monospace;
   --ifm-heading-font-family: "Cascadia Code", monospace;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+  --ifm-button-font-weight: 500;
 }
 
 /* .markdown {
@@ -132,3 +137,8 @@ body {
 .theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__link {
   font-size: 0.8rem !important;
 }
+
+/* .mermaid rect {
+  rx: 12px !important;
+  ry: 12px !important;
+} */
