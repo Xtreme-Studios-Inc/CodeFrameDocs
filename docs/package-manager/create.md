@@ -1,3 +1,10 @@
+---
+title: Create
+sidebar_position: 2
+---
+
+How to structure a new package/library
+
 Library Structure
 
 "LibraryName/" Folder  
