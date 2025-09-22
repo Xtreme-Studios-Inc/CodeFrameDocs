@@ -2,7 +2,7 @@
 Use custom flags only as a last resort for convenience flags like extra defines or library links not covered by the package manager. Do not use them to change core optimizations, warnings, debugging, or language version flags—CodeFrame handles those automatically.
 :::
 
-The custom configuration section is intended for adding project-specific flags to the build process.  
+The `custom` property is intended for adding project-specific flags to the build process.  
 These flags are directly injected into the underlying compilation and linking commands.
 
 `compileFlags`:

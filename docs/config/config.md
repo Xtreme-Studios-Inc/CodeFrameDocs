@@ -21,12 +21,12 @@ structure has too look like the following
 `projectPreset`:  
 Defines your project’s language, toolchain, and key build settings,  
 letting CodeFrame auto-configure and manage your project for you.  
-[more details ...](./projectPreset.md)
+[Config -> projectPreset ->](./projectPreset)
 
 `scripts`:  
 Define your own command combos in the scripts configuration  
 and call them with `cf run <scriptName>`  
-[more details ...](./scripts.md)
+[Config -> scripts ->](./scripts)
 
 `dependencies`:
 
@@ -34,15 +34,20 @@ and call them with `cf run <scriptName>`
 type: Array<{ name: String; includeDir: String; libraryPath: String }>;
 ```
 
-[more details ...](./dependencies.md)
+[Config -> dependencies ->](./dependencies)
 
 `systemLibs`:  
 To extend your project build to link to custom system libraries that are not included by default.  
-[more details ...](./systemLibs.md)
+[Config -> systemLibs ->](./systemLibs)
 
 `bundle`:  
 Conveniently bundles everything specified in the configuration inside a bundle folder in the build directory  
-[more details ...](./bundle.md)
+[Config -> bundle ->](./bundle)
+
+`custom`:  
+Intended for adding project-specific flags to the build process.  
+Use only as a last resort!  
+[Config -> custom ->](./custom)
 
 ## Example
 

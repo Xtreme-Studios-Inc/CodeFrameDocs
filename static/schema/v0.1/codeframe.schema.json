@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codeframe.run/schema/v0.1/codeframe.schema.json",
+  "title": "CodeFrame Project Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "description": "Project name (used in outputs/binaries)."
+    },
+    "appEntry": {
+      "type": "string",
+      "description": "Main source entry file (e.g., src/main.cpp)."
+    },
+    "buildDir": {
+      "type": "string",
+      "description": "Build output directory.",
+      "default": "build"
+    },
+    "libsDir": {
+      "type": "string",
+      "description": "Root directory where libraries/packages live.",
+      "default": "libs"
+    },
+    "scripts": {
+      "$ref": "#/$defs/scripts"
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "Libraries/packages used by this project.",
+      "items": {
+        "$ref": "#/$defs/dependency"
+      },
+      "default": []
+    },
+    "bundle": {
+      "$ref": "#/$defs/bundle"
+    },
+    "document": {
+      "$ref": "#/$defs/document"
+    },
+    "projectPreset": {
+      "$ref": "#/$defs/projectPreset"
+    },
+    "systemLibs": {
+      "type": "array",
+      "description": "System libraries to link (platform-provided).",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "custom": {
+      "type": "object",
+      "description": "Per-project low-level overrides.",
+      "additionalProperties": false,
+      "properties": {
+        "compileFlags": {
+          "type": "array",
+          "description": "Flags appended to compiler command.",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "linkFlags": {
+          "type": "array",
+          "description": "Flags appended to linker command.",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      },
+      "defaultSnippets": [
+        {
+          "label": "Custom flags",
+          "body": {
+            "compileFlags": [],
+            "linkFlags": []
+          }
+        }
+      ]
+    }
+  },
+  "required": ["projectName", "appEntry", "projectPreset"],
+  "$defs": {
+    "scripts": {
+      "type": "object",
+      "description": "Named command shortcuts runnable via CodeFrame.",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._:-]+$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "description": "Shell command to execute (e.g., 'codeframe build')."
+      }
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Dependency/package name."
+        },
+        "libPath": {
+          "type": "string",
+          "description": "Path relative to libsDir (or workspace) where the lib lives."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["library", "executable", "tool"],
+          "description": "Kind of dependency."
+        },
+        "linkType": {
+          "type": "string",
+          "enum": ["header_only", "static", "dynamic", "source"],
+          "description": "How the library is linked/integrated."
+        },
+        "libs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Artifact names to link (e.g., [\"zlib\"])."
+        },
+        "outputType": {
+          "type": "string",
+          "description": "Output artifact type (e.g., '*', 'exe', 'lib')."
+        },
+        "custom": {
+          "type": "boolean",
+          "description": "Marks a custom/local library."
+        },
+        "options": {
+          "type": "object",
+          "description": "Feature flags or provider-specific options.",
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        }
+      },
+      "required": ["name", "libPath", "type", "linkType"]
+    },
+    "bundle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bundlePath": {
+          "type": "string",
+          "description": "Destination directory for the bundled app.",
+          "default": "build/bundle"
+        },
+        "resources": {
+          "type": "array",
+          "description": "Copy/mapping instructions included in the bundle.",
+          "items": {
+            "$ref": "#/$defs/bundleResource"
+          },
+          "default": []
+        }
+      },
+      "required": ["bundlePath", "resources"]
+    },
+    "bundleResource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Source file/dir path."
+        },
+        "to": {
+          "type": "string",
+          "description": "Destination file/dir path inside bundle."
+        }
+      },
+      "required": ["from", "to"]
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "docsPath": {
+          "type": "string",
+          "description": "Path to the documentation root."
+        }
+      },
+      "required": ["docsPath"]
+    },
+    "projectPreset": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["cpp", "c", "mixed"],
+          "description": "Language preset."
+        },
+        "details": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/cppPresetDetails"
+            },
+            {
+              "$ref": "#/$defs/cPresetDetails"
+            }
+          ],
+          "description": "Language-specific options."
+        }
+      },
+      "required": ["type"]
+    },
+    "cppPresetDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cppVersion": {
+          "type": "string",
+          "enum": ["c++17", "c++20", "c++23"],
+          "description": "C++ language standard."
+        },
+        "cVersion": {
+          "type": "string",
+          "enum": ["c11", "c17", "c23"],
+          "description": "C language standard (if building C sources too)."
+        }
+      }
+    },
+    "cPresetDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cVersion": {
+          "type": "string",
+          "enum": ["c11", "c17", "c23"],
+          "description": "C language standard."
+        }
+      },
+      "required": ["cVersion"]
+    }
+  },
+  "examples": [
+    {
+      "projectName": "codeframe",
+      "appEntry": "src/main.cpp",
+      "buildDir": "build",
+      "libsDir": "libs",
+      "scripts": {
+        "build": "codeframe build",
+        "build-bundle": "codeframe build --release && codeframe bundle",
+        "build:debug": "rm -rf './build/debug' && codeframe build m=debug && echo run:[ ./build/debug/codeframe.exe ]",
+        "build:release": "codeframe build m=release",
+        "bundle": "codeframe build && codeframe bundle",
+        "clean:build": "clean m=all",
+        "start": "echo Run:\\n./build/debug/codeframe.exe",
+        "start:release": "./build/release/codeframe.exe",
+        "test": "./build/debug/codeframe.exe"
+      },
+      "dependencies": [
+        {
+          "name": "codeframe",
+          "libPath": "codeframe",
+          "type": "library",
+          "linkType": "source",
+          "outputType": "*",
+          "custom": true
+        },
+        {
+          "name": "zipios",
+          "libPath": "external/zipios",
+          "type": "library",
+          "linkType": "static",
+          "libs": ["zipios"]
+        },
+        {
+          "name": "zlib",
+          "libPath": "external/zlib",
+          "type": "library",
+          "linkType": "static",
+          "libs": ["zlib"]
+        }
+      ],
+      "bundle": {
+        "bundlePath": "build/CodeFrame",
+        "resources": [
+          {
+            "from": "./build/release/codeframe.exe",
+            "to": "./bin/codeframe.exe"
+          },
+          {
+            "from": "./Assets/bin",
+            "to": "./bin"
+          },
+          {
+            "from": "./libs/codeframe",
+            "to": "./dependencies/libs/codeframe"
+          },
+          {
+            "from": "./Assets/dependencies",
+            "to": "./dependencies"
+          },
+          {
+            "from": "./Assets/project-templates",
+            "to": "./project-templates"
+          },
+          {
+            "from": "./Assets/schematic-configs",
+            "to": "./schematic-configs"
+          },
+          {
+            "from": "./Assets/docs-generation-dependencies",
+            "to": "./docs-generation-dependencies"
+          }
+        ]
+      },
+      "document": {
+        "docsPath": "docs"
+      },
+      "projectPreset": {
+        "type": "cpp",
+        "details": {
+          "cppVersion": "c++23",
+          "cVersion": "c23"
+        }
+      }
+    }
+  ]
+}
