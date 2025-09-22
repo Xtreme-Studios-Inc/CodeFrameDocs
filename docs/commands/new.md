@@ -21,12 +21,19 @@ cf new
 
 `language=` / `lang=` / `l=`
 
-Values:  
-`cpp` `c` `asm`
+Options:
+
+- `cpp`
+- `c`
+- `asm` **_( assembly )_**
+- `combo` **_( cpp + c + asm )_**
 
 ### Template
 
 `template=` / `t=`
 
-Values:  
-`default` `cli` `game`
+Options:
+
+- `default`
+- `cli`
+- `game`

@@ -5,6 +5,14 @@ sidebar_position: 2
 
 Welcome to **CodeFrame**! This guide will walk you through downloading, installing, and creating your first C++ project.
 
+## Optional Prerequisites:
+
+- **[VS Code](https://code.visualstudio.com/)** — great IntelliSense and tight workflow with CodeFrame  
+  _(Open the project or its `.code-workspace` for best results.)_
+- **Git** — for cloning projects and templates
+  - **Windows:** [Git for Windows](https://git-scm.com/downloads) _(includes Git Bash terminal)_
+  - **macOS/Linux:** [**(Coming Soon)**](roadmap.mdx) Usually preinstalled or available via package manager
+
 <br />
 
 ### Step 1 - Download CodeFrame
@@ -48,7 +56,14 @@ Welcome to **CodeFrame**! This guide will walk you through downloading, installi
 
 ### Step 2 — Install CodeFrame
 
-Follow the installation instructions on our custom installer to install codeframe.
+Follow the instructions on our installer to install codeframe.
+
+<img
+  src="/img/CF_installer1.png"
+  alt="CodeFrame Installer"
+  width="300"
+  style={{ height: 360, width: "auto" }}
+/>
 
 :::note
 
@@ -75,7 +90,7 @@ CodeFrame comes with multiple project templates. When prompted, pick the one tha
 
 - Default — Minimal setup to get started quickly.
 - CLI — Command-Line interface project template.
-- (Coming Soon) Game — Includes rendering and basic graphics setup.
+- Game — A basic raylib template to start developing your game.
 - (Coming Soon) GUI - Event-driven graphical application with a native window.
 
 <br />
@@ -83,10 +98,16 @@ CodeFrame comes with multiple project templates. When prompted, pick the one tha
 
 For its excellent integration with CodeFrame we recommend downloading **VSCode**.
 
-To open your new project in VS Code:
+To open your new project folder in VS Code:
 
 ```bash
 code ./[PROJECT_NAME]
+```
+
+To open the workspace double click on the `.code-workspace` file inside the folder or **run**
+
+```bash
+code ./[PROJECT_NAME]/[PROJECT_NAME].code-workspace
 ```
 
 <br />

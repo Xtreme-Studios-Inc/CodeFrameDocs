@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Scripts in CodeFrame let you define your own custom commands and automation steps—mixing system commands, CodeFrame operations, and chained combos—right inside your project config.  

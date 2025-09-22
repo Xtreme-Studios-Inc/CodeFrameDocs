@@ -2,7 +2,7 @@
   "label": "Commands",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "Explore all available CodeFrame commands and what they do."
+    "type": "doc",
+    "id": "commands/commands"
   }
 }

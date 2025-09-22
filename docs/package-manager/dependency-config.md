@@ -1,5 +1,6 @@
 ---
 title: Dependency Config
+sidebar_position: 1
 ---
 
 Dependencies are managed in the .codeframe file.
@@ -10,7 +11,7 @@ Installed dependencies are always dropped in the `libs/external/` directory.
 
 ---
 
-# TL;DR for Library Users
+# Quick Start for Library Users
 
 If you’re just installing/using a package, focus on:
 

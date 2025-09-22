@@ -1,6 +1,6 @@
 ---
 title: Create
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 How to structure a new package/library

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 Dependencies are declared in the `.codeframe` file under the `dependencies` array.

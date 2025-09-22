@@ -1,4 +1,10 @@
-COMING SOON: Generate documentation from your code
+---
+title: "document (Coming Soon)"
+---
+
+### [(COMING SOON)](../roadmap.mdx)
+
+Generate documentation from your code
 
 ## Command
 

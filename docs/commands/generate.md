@@ -1,3 +1,9 @@
+---
+title: "generate (Coming Soon)"
+---
+
+### [(COMING SOON)](../roadmap.mdx)
+
 [[📜 Commands]]
 #note #command
 

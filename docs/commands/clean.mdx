@@ -1,0 +1,62 @@
+---
+sidebar_position: 5
+---
+
+Copies the resources defined in the configuration from the specified "from" path to the "to" path, bundling them together into a single folder.
+
+## Command
+
+```bash
+cf clean
+```
+
+### Aliases
+
+`clean`, `cl`
+
+## Arguments
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+
+### Mode
+
+`mode=` / `m=`
+
+The `mode=` flag can be negated as long as you use one of these values
+
+Options: `debug` `release` `profile` `bundle` `all`
+
+#### Examples
+
+<Tabs
+  values={[
+    { label: "Clean Build", value: "build" },
+    { label: "Clean Bundle", value: "bundle" },
+    { label: "Clean All", value: "all" },
+  ]}
+>
+  <TabItem value="build">
+    <p className="tabDesc">
+      Clean all build outputs for a specific configuration.
+    </p>
+    <CodeBlock language="bash">cf clean</CodeBlock>
+    <CodeBlock language="bash">cf clean profile</CodeBlock>
+    <CodeBlock language="bash">cf clean release</CodeBlock>
+  </TabItem>
+  <TabItem value="bundle">
+    <p className="tabDesc">
+      Clean the bundle folder located inside the build directory.
+    </p>
+    <div style={{ paddingBottom: 128 }}>
+      <CodeBlock language="bash">cf clean bundle</CodeBlock>
+    </div>
+  </TabItem>
+  <TabItem value="all">
+    <p className="tabDesc">Clean the entire build directory.</p>
+    <div style={{ paddingBottom: 128 }}>
+      <CodeBlock language="bash">cf clean all</CodeBlock>
+    </div>
+  </TabItem>
+</Tabs>
