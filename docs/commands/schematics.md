@@ -2,7 +2,7 @@
 title: "schematics (Coming Soon)"
 ---
 
-### [(COMING SOON)](../roadmap.mdx)
+### [(COMING SOON)](../../roadmap)
 
 [[📜 Commands]]
 #note #command

@@ -26,15 +26,15 @@ Commands are grouped by category to make it easy to find what you need.
 | Command                | Summary                                     |
 | ---------------------- | ------------------------------------------- |
 | [`run`](run)           | Runs a script defined in your `.codeframe`. |
-| [`document`](document) | [(Coming soon)](../roadmap)                 |
-| [`execute`](execute)   | [(Coming soon)](../roadmap)                 |
+| [`document`](document) | [(Coming soon)](../../../../roadmap)        |
+| [`execute`](execute)   | [(Coming soon)](../../../../roadmap)        |
 
 ## Scafolding Your Project
 
-| Command                    | Summary                     |
-| -------------------------- | --------------------------- |
-| [`schematics`](schematics) | [(Coming soon)](../roadmap) |
-| [`generate`](generate)     | [(Coming soon)](../roadmap) |
+| Command                    | Summary                              |
+| -------------------------- | ------------------------------------ |
+| [`schematics`](schematics) | [(Coming soon)](../../../../roadmap) |
+| [`generate`](generate)     | [(Coming soon)](../../../../roadmap) |
 
 ## Utilities
 

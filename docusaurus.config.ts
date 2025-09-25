@@ -104,7 +104,7 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "/roadmap", // Path to your markdown page
+          to: "/../../roadmap", // Path to your markdown page
           label: "Roadmap",
           position: "left",
         },

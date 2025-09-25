@@ -2,7 +2,7 @@
 title: "document (Coming Soon)"
 ---
 
-### [(COMING SOON)](../roadmap.mdx)
+### [(COMING SOON)](../../roadmap)
 
 Generate documentation from your code
 
