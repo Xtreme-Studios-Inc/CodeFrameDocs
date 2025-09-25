@@ -2,12 +2,26 @@
 title: "Guides"
 ---
 
-There are a handfull of helpfull guides to get you started building with codeframe as your helping hand.
+Welcome! These guides will help you get productive with CodeFrame step by step.
 
-[Find the right command](../commands)
+## 🚀 Getting Started
 
-[Configure a CodeFrame project](../config)
+- [Find the right command](../commands)
+- [Configure a CodeFrame project](../config)
+- [Debug your project](debug)
 
-[Debugging Your project](debug)
+## 📦 Package & Libraries
 
-[Create your first library](../package-manager/create)
+- [Create your first library](../package-manager/create)
+- [Manage dependencies CodeFrame](../package-manager/overview.md)
+
+<!-- ## ⚡ Advanced Workflows
+
+- [Optimizing builds](../advanced/optimizations)
+- [Integrating external libraries](../advanced/external-libs)
+- [Customizing toolchains](../advanced/toolchains)
+
+## 🧩 Extra Resources
+
+- [FAQ](../faq)
+- [Troubleshooting](../troubleshooting) -->

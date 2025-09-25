@@ -98,6 +98,16 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
+        {
+          to: "/package-list", // Path to your markdown page
+          label: "Packages",
+          position: "left",
+        },
+        {
+          to: "/roadmap", // Path to your markdown page
+          label: "Roadmap",
+          position: "left",
+        },
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/Xtreme-Studios-Inc/XCodeFrame",
