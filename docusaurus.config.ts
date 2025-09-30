@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "CodeFrame",
   tagline:
-    "Built for C++ developers, CodeFrame delivers serious performance and precision at every stage of your workflow. No bloat, just pure C++ power.",
+    "Built for C++ developers, CodeFrame delivers serious performance and precision at every stage of your workflow. No bloat, just pure C++ power.\n\n⚠️ Early Release Notice\nThis release is intended as a proof of concept and may not be ready for serious production builds yet.\n\n",
   favicon: "img/CF_Logo.ico",
 
   markdown: {
@@ -152,6 +152,15 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
+        // {
+        //   title: "Docs",
+        //   items: [
+        //     {
+        //       label: "Tutorial",
+        //       to: "/docs/introduction",
+        //     },
+        //   ],
+        // },
         {
           title: "Docs",
           items: [
@@ -164,6 +173,14 @@ const config: Config = {
         {
           title: "Community",
           items: [
+            {
+              label: "Discussions",
+              href: "https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/discussions",
+            },
+            {
+              label: "Issues",
+              href: "https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/issues",
+            },
             {
               label: "YouTube",
               href: "https://www.youtube.com/@xconsciouscreator",
@@ -190,7 +207,7 @@ const config: Config = {
             //   to: "/blog",
             // },
             {
-              label: "GitHub (coming soon)",
+              label: "GitHub Repo (coming soon)",
               href: "https://github.com/Xtreme-Studios-Inc/XCodeFrame",
             },
           ],

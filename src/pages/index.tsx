@@ -26,7 +26,7 @@ function HomepageHeader() {
               color: "white",
               marginRight: "1rem",
             }}
-            to="https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/releases/download/codeframe.003/codeframe-installer.exe"
+            to="https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/releases/download/codeframe.latest/codeframe-installer.exe"
           >
             Download
           </Link>

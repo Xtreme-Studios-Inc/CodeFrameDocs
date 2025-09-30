@@ -1,5 +1,6 @@
 {
   "label": "graphics",
+  "className": "hidden",
   "link": {
     "type": "doc",
     "id": "api-reference/graphics/graphics"

@@ -1,5 +1,6 @@
 {
   "label": "theme",
+  "className": "hidden",
   "link": {
     "type": "doc",
     "id": "api-reference/theme/theme"

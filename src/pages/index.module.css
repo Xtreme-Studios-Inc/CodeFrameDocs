@@ -41,6 +41,8 @@
   margin: 0 auto; /* centers the block */
   text-align: center; /* centers text inside it */
   margin-bottom: 1.3rem;
+
+  white-space: pre-line;
 }
 
 /* Bigger, tighter, nicer rhythm */
