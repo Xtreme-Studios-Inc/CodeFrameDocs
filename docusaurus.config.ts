@@ -162,11 +162,15 @@ const config: Config = {
         //   ],
         // },
         {
-          title: "Docs",
+          title: "Notable Pages",
           items: [
             {
-              label: "Tutorial",
+              label: "Introduction",
               to: "/docs/introduction",
+            },
+            {
+              label: "Getting Started",
+              to: "/docs/getting-started",
             },
           ],
         },
@@ -209,6 +213,10 @@ const config: Config = {
             {
               label: "GitHub Repo (coming soon)",
               href: "https://github.com/Xtreme-Studios-Inc/XCodeFrame",
+            },
+            {
+              label: "Releases",
+              href: "https://github.com/Xtreme-Studios-Inc/CodeFrameDocs/releases",
             },
           ],
         },
