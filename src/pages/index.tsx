@@ -46,13 +46,13 @@ function HomepageHeader() {
     </header>
   );
 }
-
+//${siteConfig.title}`
 export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
+  // const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Modern Toolchain for Low-Level Development`}
+      description="CodeFrame is the next-generation low-level build tool bringing speed, simplicity, and modern features you expect from tools like Bun or npm, to C, C++ and Assembly. <head />"
     >
       <HomepageHeader />
       <main>

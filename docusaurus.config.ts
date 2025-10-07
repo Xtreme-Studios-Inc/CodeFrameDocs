@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "CodeFrame",
   tagline:
-    "Built for C++ developers, CodeFrame delivers serious performance and precision at every stage of your workflow. No bloat, just pure C++ power.\n\n⚠️ Early Release Notice\nThis release is intended as a proof of concept and may not be ready for serious production builds yet.\n\n",
+    "CodeFrame is the next-generation low-level build tool bringing speed, simplicity, and modern features you expect from tools like Bun or npm, to C, C++ and Assembly.\n\n⚠️ Early Release Notice\nThis release is intended as a proof of concept and may not be ready for serious production builds yet.\n\n",
   favicon: "img/CF_Logo.ico",
 
   markdown: {
