@@ -78,7 +78,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/codeframe-social-card.jpg",
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
       defaultMode: "dark",
       disableSwitch: true,
