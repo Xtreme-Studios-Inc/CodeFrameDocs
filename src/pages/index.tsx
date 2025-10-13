@@ -7,6 +7,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
+import Head from "@docusaurus/Head";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -49,11 +50,26 @@ function HomepageHeader() {
 //${siteConfig.title}`
 export default function Home(): ReactNode {
   // const { siteConfig } = useDocusaurusContext();
+  const title = "Modern Toolchain for Low-Level Development";
+  const desc =
+    "CodeFrame is the next-generation low-level build tool bringing speed, simplicity, and modern features you expect from tools like Bun or npm, to C, C++ and Assembly.";
+  const og = "https://codeframe.run/img/docusaurus-social-card.jpg";
+
   return (
     <Layout
       title={`Modern Toolchain for Low-Level Development`}
-      description="CodeFrame is the next-generation low-level build tool bringing speed, simplicity, and modern features you expect from tools like Bun or npm, to C, C++ and Assembly. <head />"
+      description="CodeFrame is the next-generation low-level build tool bringing speed, simplicity, and modern features you expect from tools like Bun or npm, to C, C++ and Assembly."
     >
+      <Head>
+        <meta property="og:title" content={`${title}`} />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content={og} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${title}`} />
+        <meta name="twitter:description" content={desc} />
+        <meta name="twitter:image" content={og} />
+      </Head>
+
       <HomepageHeader />
       <main>
         <HomepageFeatures />
