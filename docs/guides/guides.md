@@ -9,6 +9,7 @@ Welcome! These guides will help you get productive with CodeFrame step by step.
 - [Find the right command](../commands)
 - [Configure a CodeFrame project](../config)
 - [Debug your project](debug)
+- [⚡ x-lang: Universal Compiler Core](x-lang)
 
 ## 📦 Package & Libraries
 

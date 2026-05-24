@@ -1,0 +1,42 @@
+# AI Agent & Subagent Directives: CodeFrame Repository Standards
+
+Whenever you begin a task or are invoked in this workspace, you MUST immediately ingest and strictly follow these standards.
+
+## 🧭 Core Guidelines Summary
+For deep context, read:
+*   Standard Gist: [RepoStandardsGistForAI.md](file:///d:/Dev/XtremeStudios/XDev/XCodeFrame/src/x-lang/docs/RepoStandardsGistForAI.md)
+*   Full Manual: [RepoStandardsAndPractices.md](file:///d:/Dev/XtremeStudios/XDev/XCodeFrame/src/x-lang/docs/RepoStandardsAndPractices.md)
+
+---
+
+## 📂 1. High-Granularity Spatial-Visual Categorization (Spatio-Semantic Chunking)
+*   **NEVER** write or leave files in a flat directory list in parent folders if they can be categorized.
+*   **ALWAYS** group files into granular, deeply nested micro-folders. Target **2 files** per folder by default. It is acceptable in special circumstances to have more than 2, but the total count must **never exceed 5 files**.
+*   **RATIONALE:** Minimizes visual noise and executive-functioning drain for ADHD/spatial human minds, and partitions context sizes for AI agents during directory listings.
+
+---
+
+## 💻 2. Technical Writing & Documentation Constraints
+*   **Aesthetics & Presentation:** All technical documentation, plans, checklists, and reports must be highly structured. Keep paragraphs to a maximum of 3 sentences.
+*   **Visual Scaffold:** Use markdown tables, bold key concepts, clear highlight blocks (`> [!NOTE]`, `> [!IMPORTANT]`), and nested lists to present complex details.
+*   **Zero-Comment Backend Policy:** Remember that source files in the `XCodeFrame` compiler backend are strictly comment-free. Document logic inside semantic markdown guides under `docs/` rather than inline code comments.
+
+---
+
+## 🛡️ 3. Branch Safety
+*   **DO NOT** push or commit directly to `main`.
+*   **DO** stage and push updates on independent developer branches (e.g., `xlang` or `feat/...`).
+
+---
+
+## 🧠 4. ADHD-Friendly Communication & Output
+*   **Scannability:** Never emit walls of text. Keep paragraphs to a maximum of 3 sentences.
+*   **Structure:** Use markdown lists, bold keywords, separator blocks (`---`), and tables to map technical relationships.
+*   **Tone:** Remain professional, humble, and exact. Avoid superlatives like "perfectly", "flawlessly", "100% correct", or "Summary of Accomplishments".
+
+---
+
+## 📝 5. Documentation & Architecture Specifications
+*   **ALWAYS** write unimplemented language feature specifications, phase handoffs, and checklists inside the `src/x-lang/docs/current/` directory of the `XCodeFrame` repository. Once fully implemented, they should be moved to their respective permanent category subdirectories (e.g., `src/x-lang/docs/architecture/` or `src/x-lang/docs/phases/`).
+*   **NEVER** leave design documents solely in the system artifacts folders. They must be authored directly inside the repository's docs structure to ensure visibility and source control history.
+
